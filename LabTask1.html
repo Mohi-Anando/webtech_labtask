@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .container {
+      background-color: rgba(38, 195, 203, 0.549);
+      margin-left: 400px;
+      margin-right: 350px;
+    }
+    h2 {
+      text-align: center;
+      color: red;
+    }
+    .tb1 {
+      text-align: left;
+    }
+    .tb2 {
+      text-align: left;
+    }
+    .tb3 {
+      text-align: left;
+    }
+    .tb4 {
+      text-align: left;
+    }
+    .tb5 {
+      text-align: left;
+    }
+    .liketo {
+      text-align: center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information</title>
+  </head>
+  <body style="background-color: #cee5ed">
+    <div class="container">
+      <h2>*Denotes Required Information</h2>
+      <p class="heading" style="text-align: center">
+        <span style="font-weight: bold">1.Donation</span> 2. Confirmation 3.
+        Thank You!
+      </p>
+      <h2>Donor Information</h2>
+      <form>
+        <table class="tb1">
+          <tr>
+            <td>
+              <label for="firstname">Firstname* </label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="firstname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lastname">Lastname* </label>
+            </td>
+            <td>
+              <input
+                type="text"
+                placeholder="lastname"
+                id="lastname"
+                name="lastname"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="company">Company </label>
+            </td>
+            <td>
+              <input
+                type="text"
+                placeholder="company"
+                id="company"
+                name="company"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address1">Address 1*</label>
+            </td>
+            <td>
+              <textarea
+                id="address1"
+                name="address1"
+                cols="25"
+                rows="5"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address2">Address 2</label>
+            </td>
+            <td>
+              <textarea
+                id="address2"
+                name="address2"
+                cols="25"
+                rows="5"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city">City </label>
+            </td>
+            <td>
+              <input type="text" placeholder="city" id="city" name="city" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="state">State</label>
+            </td>
+            <td>
+              <select id="state" name="state">
+                <option value="select" selected>Select a State</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chattogram">Chattogram</option>
+                <option value="cummila">Cummila</option>
+                <option value="barisal">Barisal</option>
+                <option value="sylhet">Sylhet</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="zip">Zip Code </label>
+            </td>
+            <td>
+              <input type="number" placeholder="zip" id="zip" name="zip" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="contry">Contry*</label>
+            </td>
+            <td>
+              <select id="contry" name="contry">
+                <option value="select2" selected>Select a Country</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Saudi">Saudi Arabia</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Enter your phone number</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="fax">Fax </label>
+            </td>
+            <td>
+              <input type="text" placeholder="fax" id="fax" name="fax" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="email">Email* </label>
+            </td>
+            <td>
+              <input type="email" placeholder="email" id="email" name="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="amount">Donation Amount* </label><br />
+              <label for="checked"
+                >(Check a button or type in your amount)*
+              </label>
+            </td>
+            <td>
+              <input type="radio" name="amount" id="none" value="none" />None
+              <input type="radio" name="amount id="50" value="50" />50$ <input
+              type="radio" name="amount id="75" value="75" />75$ <input
+              type="radio" name="amount id="100" value="100" />100$ <input
+              type="radio" name="amount id="250" value="250" />250$ <input
+              type="radio" name="amount id="other" value="other" />other
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="oamount">Other Amount $ </label>
+            </td>
+            <td>
+              <input type="text" id="oamount" name="oamount" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Donation">Recurring Donation </label><br />
+              <label for="checked">(Check if yes) </label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Donation"
+                id="Donation"
+                value="yes"
+              />I am interested in giving on regular basis.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="monthly">Monthly Credits $</label>
+              <input type="text" id="monthly" name="monthly" />
+            </td>
+            <td>
+              <label for="month">For</label>
+              <input type="text" id="month" name="month" />
+              <label for="month">Month</label>
+            </td>
+          </tr>
+        </table>
+
+        <h2 class="header2">Honorarium and Memorial Donation Information</h2>
+
+        <table class="tb2">
+          <tr>
+            <td>
+              <label for="honar">I wounld like to make this donation</label>
+            </td>
+            <td>
+              <input type="radio" name="honar" value="1" />To Honar<br />
+
+              <input type="radio" name="honar" value="2" />In memory of
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="name">Name </label>
+            </td>
+            <td>
+              <input type="text" name="name" id="name" placeholder="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="acknowledge">Acknowledge Donation tp </label>
+            </td>
+            <td>
+              <input type="text" name="acknowledge" id="acknowledge" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Address </label>
+            </td>
+            <td>
+              <input type="text" id="address" name="address" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="city1">City </label>
+            </td>
+            <td>
+              <input type="text" id="city1" name="city1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="state1">State</label>
+            </td>
+            <td>
+              <select id="state1" name="state1">
+                <option value="select" selected>Select a State</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chattogram">Chattogram</option>
+                <option value="cummila">Cummila</option>
+                <option value="barisal">Barisal</option>
+                <option value="sylhet">Sylhet</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="zip1">Zip </label>
+            </td>
+            <td>
+              <input type="text" id="zip1" name="zip1" />
+            </td>
+          </tr>
+        </table>
+
+        <h2 class="head2">Additional Information</h2>
+        <p class="head3" style="text-align: center">
+          Please enter your name, company or orgranization as you would like it
+          to appear in our publications
+        </p>
+
+        <table class="tb3">
+          <tr>
+            <td>
+              <label for="name">Name </label>
+              <input type="text" name="name" id="name" placeholder="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="like" id="like" value="like" />I
+              would like my gift to remain anonymous.<br />
+              <input type="checkbox" name="emp" id="emp" value="emp" />My
+              employer offers a matching gift program.I will mail the matching
+              gift form.<br />
+              <input type="checkbox" name="save" id="save" value="save" />Please
+              save the cost of acknowledging this gift by not mailing a thank
+              you letter<br />
+            </td>
+          </tr>
+        </table>
+        <table class="tb4">
+          <tr>
+            <td>
+              <label for="comment" style="font-size: 20px">Comment</label>
+              <br />
+              <label for="comment" style="font-size: 10px"
+                >(Please type any questions or feedback here)</label
+              >
+            </td>
+            <td>
+              <input type="text" name="comment" id="comment" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="contact">How may we contact you? </label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="e-mail"
+                id="e-mail"
+                value="e-mail"
+              />E-mail<br />
+              <input type="checkbox" name="mail" id="mail" value="mail" />Postal
+              Mail
+              <br />
+              <input
+                type="checkbox"
+                name="tele"
+                id="tele"
+                value="tele"
+              />Telephone<br />
+              <input
+                type="checkbox"
+                name="fax1"
+                id="fax1"
+                value="fax1"
+              />Fax<br />
+            </td>
+          </tr>
+        </table>
+        <p class="p2" style="text-align: center">
+          I would like to recive newsletters and information about special
+          events by:
+        </p>
+        <table class="tb5">
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="email1" value="email1" />Email<br />
+              <input type="checkbox" id="postemail" value="postemail" />Postal
+              Email<br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br />
+              <input type="checkbox" id="liketo" name="liketo" value="liketo" />
+            </td>
+            <td>
+              <br />
+              <label class="head6" name="liketo">
+                I would like information about voulenteering with the
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br />
+              <input type="reset" name="reset" value="Reset" />
+            </td>
+            <td>
+              <br />
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div class="footer" style="text-align: center">
+        <img
+          src="image/padlock.png"
+          alt="PADLOCK"
+          width="15"
+          height="20"
+        />Donate online with confidence. You are on a secure server.
+        <p>
+          If you have any problems or questions,please contact
+          <span style="color: rgb(172, 118, 118)">support</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
