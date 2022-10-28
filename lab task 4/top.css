@@ -1,0 +1,17 @@
+.header {
+  width: 100px;
+}
+
+.logo {
+  display: inline-block;
+}
+.navigation {
+  display: inline-block;
+}
+
+.home {
+  display: inline-block;
+}
+.login {
+  display: inline-block;
+}
